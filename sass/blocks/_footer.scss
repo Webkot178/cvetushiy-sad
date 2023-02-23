@@ -1,0 +1,19 @@
+.footer {
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(19, 190, 62);
+    color: #fff;
+    text-align: left;
+}
+
+.footer__text {
+    font-size: 12px;
+}
+
+.footer .footer__link {
+    font-weight: 600;
+    color: rgb(255, 166, 0);
+    text-decoration: underline;
+    cursor: pointer;
+}

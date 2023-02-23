@@ -1,0 +1,71 @@
+.about {
+    padding-top: 170px;
+    margin-top: -170px;
+    padding-bottom: 40px;
+    background-clip: content-box;
+    background-image: url("../../img/fon/sky.svg");
+    background-size: cover;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        display: none;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
+
+.about__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    row-gap: 20px;
+    column-gap: 20px;
+
+        img {
+            object-fit: cover;
+            border-radius: 3%;
+        }
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-top: 10px;
+            img:not(:last-child) {
+                display: none;
+            }
+    }
+}
+
+.about__img-small {
+    width: 450px;
+    height: 250px;
+}
+
+.about__wrapper .img-big {
+    height: 150px;
+    object-fit: cover;
+}
+
+.about__more-photos {
+    padding: 0 110px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+
+    &:hover {
+        color: #ff0000;
+        transition: 0.7s;
+        text-shadow: 5px 8px 12px #000000, -5px -8px 12px rgba(255, 255, 0, 0.995);
+    }
+
+    & p + p {
+        margin-top: 1em;
+    }
+
+    /* Mobile */
+    @media (max-width :767px) {
+        padding: 0;
+        font-size: 15px;
+    }
+}

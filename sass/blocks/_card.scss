@@ -1,0 +1,72 @@
+.card {
+    display: flex;
+    column-gap: 30px;
+    padding-top: 40px;
+
+    img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10%;
+    }
+
+    /* Mobile */
+    @media (max-width :767px) {
+        padding-top: 0;
+        padding-bottom: 25px;
+        flex-direction: column;
+
+        img {
+            margin-bottom: 10px;
+            width: 300px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 0%;
+
+        }
+    }
+}
+
+.card-wrapper .about__more-photos {
+    display: none;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        display: block;
+    }
+}
+
+.title-mid {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-bottom: 0;
+    }
+}
+
+.text {
+    width: 900px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.7;
+
+    & p + p {
+        margin-top: 1em;
+    }
+
+    /* Mobile */
+    @media (max-width :767px) {
+        width: auto;
+        line-height: 1.4;
+    }
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+}

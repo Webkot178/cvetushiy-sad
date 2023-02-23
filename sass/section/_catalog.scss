@@ -1,0 +1,15 @@
+.catalog {
+    padding-top: 170px;
+    margin-top: -210px;
+    padding-bottom: 40px;
+    background-clip:content-box;
+    background-image: url("../../img/fon/sky.svg");
+    background-size: cover;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+}

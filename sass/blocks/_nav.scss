@@ -1,0 +1,109 @@
+.mobile-navigation {
+    display: none;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(4, 40, 41);
+    background-image: url("../../img/fon/top-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+    /* Mobile */
+    @media (max-width :767px) {
+        display: block;
+        padding-top: 10px;
+        margin-bottom: -1px;
+    }
+}
+
+.mobile-navigation__header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+}
+
+.mobile-navigation__item {
+    /* Mobile */
+    @media (max-width :767px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav-desktop__list li {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.nav .social__icon {
+    padding-bottom: 20px;
+}
+
+/* Mobile */
+@media (max-width :767px) {
+    .nav {
+        z-index: 9;
+        position: fixed; // так как мобтльная навигация уходит наверх (обязательно пишем)
+        top: 0;
+        right: 0;
+        width: 320px;
+        height: 100%;
+        // background-color: rgba(0, 79, 69, 1);
+        background-color: #337AB7;
+
+        transform: translateX(100%); // для правой стороны
+        opacity: 0; // прозрачность
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        transition: opacity .2s ease-in, top 0s linear 0.2s;
+    }
+
+    .nav li {
+        margin-right: 0;
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.3;
+        color: #fff;
+    }
+
+    .nav.nav--active {
+        display: flex;
+        justify-content: space-between;
+        opacity: 1;
+        transform: translateX(0); // для правой стороны
+        transition: all 0.3s ease-in;
+    }
+
+    .overlay {
+        position: absolute;
+        position: fixed;
+        display: none;
+        height: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        // background-color: rgba(0, 79, 69);
+        background-color: #BFE2FF;
+        opacity: 0.8;
+    }
+    
+    .overlay.overlay--active {
+        display: block;
+    }
+}

@@ -1,0 +1,134 @@
+.logo {
+    /* Mobile */
+    @media (max-width :767px) {
+        width: 150px;
+    }
+} 
+
+.header-nav {
+    position: sticky;
+    top: -10px;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    z-index: 9;
+    background-image: url("../../img/fon/skysun.svg");
+    background-size: cover;
+    background-color: rgb(4, 40, 41);
+    color: rgb(4, 40, 41);
+
+
+    /* Mobile */
+    @media (max-width :767px) {
+        display: none;
+    }
+}
+
+.header-nav li:hover, .header-nav li:focus {
+    color: #ff0000;
+    transition: 0.7s;
+    text-shadow: 5px 8px 12px #000000, -5px -8px 12px rgba(255, 255, 0, 0.995);
+}
+
+.header__wrapper {
+    margin-top: 30px;
+    display: flex;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-top: 5px;
+    }
+}
+
+.header-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav__list {
+    display: flex;
+    align-items: center;
+
+    column-gap: 50px;
+}
+
+.header-nav__list li {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    z-index: 1;
+    margin-top: -1px;
+    background-image: url("../../img/fon/sky.svg");
+    background-size: cover;
+    background-color: rgb(4, 40, 41);
+    color: #fff;
+}
+
+.header__title {
+    width: 720px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-family: 'Chillax';
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: 1.5px;
+    color: rgb(4, 40, 41);
+
+    /* Mobile */
+    @media (max-width :767px) {
+        font-size: 35px;
+        line-height: 50px;
+        letter-spacing: 0;
+    }
+}
+
+.header__title .phone {
+    margin-top: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.subtitle {
+    width: 920px;
+    font-size: 30px;
+}
+
+.header__img-wrapper {
+    z-index: 1;
+    display: flex;
+    column-gap: 25px;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        display: none;
+    }
+}
+
+.header__img-small {
+    margin-bottom: 30px;
+    margin-left: 30px;
+
+        img {
+            width: 222px;
+            height: 285px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border-radius: 10%;
+
+        }
+}
+
+.header__img-big {
+    img {
+        width: 420px;
+        height: 597px;
+        object-fit: cover;
+        border-radius: 5%;
+    }
+}

@@ -1,0 +1,28 @@
+.delivery {
+    padding-top: 40px;
+    background-color: rgba(0, 79, 69, 0.1);
+    background-image: url("../../img/fon/sky.svg");
+    background-size: cover;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        padding-top: 30px;
+        margin-top: 0px;
+        background-color: rgba(0, 79, 69, 0.2);
+    }
+}
+
+.delivery__text {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.4;
+
+    & p + p {
+        margin-top: 1em;
+    }
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,226 @@
+.contacts {
+    padding-top: 170px;
+    margin-top: -170px;
+    background-clip: content-box;
+    background-image: url("../../img/fon/main-4.jpg");
+    background-size: cover;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.contacts__header {
+    margin-bottom: 40px;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-bottom: 10px;
+    }
+}
+
+.contact__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        flex-direction: column;
+    }
+}
+
+.contact__block:not(:last-child) {
+    margin-bottom: 40px;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-bottom: 0;
+    }
+}
+
+.contact__block-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.3;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+}
+
+.contact__block-body {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.contact__list {
+    text-align: left;
+}
+
+/* для задания габаритов карты, на сайте (так как в iframe мы указали ширину и высоту 100%, для удобства дальнейшей адаптации) нам необходимо обратится к конкретному .contact-block-body (такой же блок мы имеем и сверху), поэтому для обращения именно к нижнему блоку с картой нам нужно прописать селектор .contact-block + .contact-block .contact-block-body и далее уже ему задать ширину и высоту  */
+// .contact__block + .contact__block .contact__block-body {
+//     width: 470px;
+//     height: 345px;
+// }
+
+.contact__list li {
+    font-weight: 600;
+    color: #31405B;
+    color: #0068a0;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        font-size: 18px;
+    }
+}
+
+.contact__list li:not(:last-child) {
+    margin-bottom: 15px;
+
+        &:hover {
+            color: #ff0000;
+            transition: 0.7s;
+            text-shadow: 5px 8px 12px #000000, -5px -8px 12px rgba(255, 255, 0, 0.995);
+            
+        }
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-bottom: 5px;
+    }
+}
+
+.contact__list .address {
+    color: #31405B;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        width: 300px;
+    }
+}
+
+.contact__list-icon {
+    position: relative;
+    padding-left: 39px;
+}
+
+.contact__list-icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.contact__list-icon.phone::before {
+    background-image: url("../img/icon/phone.svg");
+}
+
+.contact__list-icon.email::before {
+    background-image: url("../img/icon/mail.svg");
+}
+
+.contact__list-icon.address::before {
+    background-image: url("../img/icon/map-pin.svg");
+}
+
+.social__icon {
+    margin-top: 30px;
+
+    & :not(:last-child) {
+        margin-right: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-top: 15px;
+    }
+}
+
+.social__icon-item:hover {
+    opacity: 0.75;
+}
+
+.map {
+    margin-bottom: 30px;
+}
+
+/* Mobile */
+@media (max-width :767px) {
+    iframe {
+        width: 295px;
+        height: 300px;
+    }
+}
+
+/* Contact-form */
+/*.описание формы данных */
+.form {
+    margin: 0 auto;
+    padding: 40px;
+    padding-top: 0;
+    width: 630px;
+    // box-shadow: 0px 10px 20px rgba(211, 211, 211, 0.25);
+
+    /* Mobile */
+    @media (max-width :767px) {
+        overflow-x: hidden;
+        width: 320px;
+    }
+}
+
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-row:last-child {
+    margin-bottom: 0;
+}
+
+.form-group-row > .form-control + .form-control {/* задание внешнего отступа элементам первого порядка в группе form-group-row, если у него есть сосед слева */
+    margin-left: 10px;
+}
+
+/* личные данные */
+.form-control {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #EEEEEE;
+    border: 1px solid rgb(4, 40, 41);
+    border-radius: 6px;
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        font-size: 15px;
+    }
+}
+
+.form-control::placeholder {
+    color: rgb(4, 40, 41);
+}
+
+.form-control:focus {
+    border: 2px solid rgb(4, 40, 41);
+}

@@ -1,0 +1,98 @@
+.advantages {
+    padding-top: 170px;
+    margin-top: -210px;
+    background-clip: content-box;
+    background-image: url("../../img/fon/sky.svg");
+    background-size: cover;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+.title-small {
+    padding-top: 20px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        font-size: 25px;
+    }
+}
+
+.subtitle-small {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+}
+
+.package-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.package {
+    display: flex;
+    margin-top: 50px;
+
+    width: 500px;
+    height: 200px;
+
+    &__img {
+        flex-shrink: 0;
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+
+                /* Mobile */
+                @media (max-width :767px) {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+    }
+
+    /* Mobile */
+    @media (max-width :767px) {
+        margin-top: 10px;
+        width: auto;
+        height: auto;
+    }
+}
+
+.package__content {
+    width: 300px;
+    font-weight: 700;
+
+    /* Mobile */
+    @media (max-width :767px) {
+        width: 100%;
+    }
+}
+
+.package__text {
+    margin-left: 20px;
+}
+
+.package__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-transform: uppercase;    
+}
